@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Adrian Q. Silva
-description: Full-Stack Web Developer
-logo: profile/assets/profile_picture.jpg
+name: Adrian Q. Silva
+position: Full-Stack Web Developer
+profile_picture: profile/assets/profile_picture.jpg
 linkedIn: https://www.linkedin.com/in/silvadrian3
-skills: profile/assets/skill_set.jpg
+email: silvadrian3@gmail.com

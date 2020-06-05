@@ -14,31 +14,31 @@
   <body>
     <div class="wrapper">
       <header style="text-align: center;">
-
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% if site.profile_picture %}
+          <img src="{{site.profile_picture | relative_url}}" alt="Profile Picture" />
         {% endif %}
 
         <p class="view">
           <h1>
-            <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+            <a href="{{ "/" | absolute_url }}">{{ site.name }}</a>
           </h1>
         </p>
 
         <p class="view">
-          <a href="{{ site.linkedIn }}">LinkedIn</a> &#8226; <a href="{{ site.github.owner_url }}">GitHub</a>
+          <a href="mailto:{{site.email}}">{{ site.email }}</a><br/>
+          <a href="{{ site.linkedIn }}">LinkedIn Profile</a>
         </p>
         
       </header>
 
       <section>
         <!-- {{ content }} -->
-        <h1>{{ site.description | default: site.github.project_tagline }}</h1>
+        <h1>{{ site.position }}</h1>
 
         <p>More than 6 years of working experience in full-stack web applications development, Websites with CMS development, systems integration, web services and other web technologies.
         </p>
 
-        <div style="margin-left: 30px;">
+        <div style="margin: 0 0 30px 30px;">
           <h2>Front-End</h2>
           <blockquote style="margin-left:30px">
             HTML5<br/>
@@ -51,6 +51,8 @@
             PWA (Progressive Web Application)<br/>
             React Native
           </blockquote>
+        </div>
+        <div style="margin: 0 0 30px 30px;">
 
           <h2>Back-End</h2>
           <blockquote style="margin-left:30px">
@@ -58,14 +60,16 @@
             Laravel / Lumen<br/>
             ASP.Net
           </blockquote>
-
-          <h2>Server Management &amp; Infrastructure</h2>
+        </div>
+        <div style="margin: 0 0 30px 30px;">
+          <h2>Infrastructure</h2>
           <blockquote style="margin-left:30px">
             AWS (Amazon Web Services)<br/>
             Google Cloud Platform<br/>
             GoDaddy
           </blockquote>
-
+        </div>
+        <div style="margin: 0 0 30px 30px;">
           <h2>Databases</h2>
           <blockquote style="margin-left:30px">
             MySQL<br/>
@@ -73,7 +77,8 @@
             Firebase<br/>
             Cloud Firestore
           </blockquote>
-
+        </div>
+        <div style="margin: 0 0 30px 30px;">
           <h2>API / Integrations</h2>
           <blockquote style="margin-left:30px">
             Accounting Softwares (XERO, MYOB, Quickbooks)<br/>
@@ -83,12 +88,12 @@
             Microsoft (OneDrive, Outlook Calendar)<br/>
             Dropbox
           </blockquote>
-
+        </div>
+        <div style="margin: 0 0 30px 30px;">
           <h2>Development Tools</h2>
           <blockquote style="margin-left:30px">
             GitHub/Bitbucket &#8226; Trello &#8226; Slack &#8226; Sequel Pro &#8226; Postman / Swagger &#8226; Photoshop &#8226; Sketch &#8226; AMPPS/XAMPP &#8226; VS Code &#8226; SourceTree
           </blockquote>
-
         </div>
 
       </section>
