@@ -14,34 +14,35 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
+
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="view">
+          <h1>
+            <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+          </h1>
+        </p>
 
         <p class="view">
-          <a href="{{ site.linkedIn }}">LinkedIn Profile</a> <br/>
-          {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}">GitHub Profile</a>
-          {% endif %}
-          </p>
+          <a href="{{ site.linkedIn }}">LinkedIn</a> &#8226; <a href="{{ site.github.owner_url }}">GitHub</a>
+        </p>
         
-
       </header>
-      <section>
+      
+        <section>
 
-      <!-- {{ content }} -->
+        <!-- {{ content }} -->
+        <h1>{{ site.description | default: site.github.project_tagline }}</h1>
 
-      <p>More than 6 years of working experience in full-stack web applications development, Websites with CMS development, systems integration, web services and other web technologies.
-      </p>
-      <p>
-        <img src="{{site.skills | relative_url}}" alt="Skills" />
-      </p>
+        <p>More than 6 years of working experience in full-stack web applications development, Websites with CMS development, systems integration, web services and other web technologies.
+        </p>
+        <p>
+          <img src="{{site.skills | relative_url}}" alt="Skills" />
+        </p>
 
-      </section>
+        </section>
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
