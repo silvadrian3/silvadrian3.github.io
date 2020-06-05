@@ -13,20 +13,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <header style="text-align: center;">
+      <header>
         {% if site.profile_picture %}
           <img src="{{site.profile_picture | relative_url}}" alt="Profile Picture" />
         {% endif %}
 
-        <p class="view">
+        <p class="view" style="text-align: center;">
           <h1>
             <a href="{{ "/" | absolute_url }}">{{ site.name }}</a>
           </h1>
         </p>
-
-        <p class="view">
-          <a href="mailto:{{site.email}}">{{ site.email }}</a><br/>
-          <a href="{{ site.linkedIn }}">LinkedIn Profile</a>
+        <p>More than 6 years of working experience in full-stack web applications development, Websites with CMS development, systems integration, web services and other web technologies.
+        </p>
+        <p class="view" style="text-align: center;">
+          <a href="{{ site.linkedIn }}">LinkedIn</a> &#8226; <a href="{{ site.github.owner_url }}">GitHub</a>
         </p>
         
       </header>
@@ -34,10 +34,6 @@
       <section>
         <!-- {{ content }} -->
         <h1>{{ site.position }}</h1>
-
-        <p>More than 6 years of working experience in full-stack web applications development, Websites with CMS development, systems integration, web services and other web technologies.
-        </p>
-
         <div style="margin: 0 0 30px 30px;">
           <h2>Front-End</h2>
           <blockquote style="margin-left:30px">
@@ -47,9 +43,8 @@
             JavaScript (jQuery, AJAX) <br/>
             ES6+, TypeScript, Redux<br/>
             Angular2+<br/>
-            ReactJS<br/>
-            PWA (Progressive Web Application)<br/>
-            React Native
+            ReactJS &amp; React Native<br/>
+            PWA (Progressive Web Application)
           </blockquote>
         </div>
         <div style="margin: 0 0 30px 30px;">
@@ -74,8 +69,7 @@
           <blockquote style="margin-left:30px">
             MySQL<br/>
             MS Access / SQL Server<br/>
-            Firebase<br/>
-            Cloud Firestore
+            Firebase / Cloud Firestore
           </blockquote>
         </div>
         <div style="margin: 0 0 30px 30px;">
